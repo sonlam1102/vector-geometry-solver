@@ -68,11 +68,13 @@ function insertText(piece) {
 function ClickGiai(){
 	$('#step_solve').on("click", function(){
 		var debai = $('#txtEquation').val();
+		let token = $('#csrf_token').val();
 		$.ajax({
 			type: 'POST',
-			url: 'runbat.php',
+			url: '/problem/push',
 			data:{
-				debai:debai
+				debai: debai,
+                _token: token
 			},
 			success: function(data){
 				//data="$$ ta\\ có\\ :\\\\B $$";

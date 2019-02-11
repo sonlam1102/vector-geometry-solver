@@ -15,5 +15,6 @@ class MainController extends Controller
     public function solve(Request $request) {
         $problem = $request->post('debai');
 
+        dd($problem);
     }
 }
