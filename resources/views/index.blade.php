@@ -3,21 +3,24 @@
 
 <head>
     <title>Csmath | Math Problem Solver with Steps | Math Solving App</title>
-    <meta name='description' content='Solve calculus and algebra problems online with Cymath math problem solver with steps to show your work. Get the Cymath math solving app on your smartphone!' />
-    <meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0' />
-    <meta property='og:image' content='http://www.cymath.comimg/cymath_square.gif' />
-    <meta property='og:title' content='Cymath | Math Problem Solver with Steps | Math Solving App' />
-    <meta property='og:description' content='Solve calculus and algebra problems online with Cymath math problem solver with steps to show your work. Get the Cymath math solving app on your smartphone!' />
-    <meta property='og:url' content='1' />
-    <meta charset='utf-8' />
-    <meta name='apple-mobile-web-app-capable' content='yes' />
-    <meta name='apple-mobile-web-app-title' content='Cymath' />
-    <link rel='apple-touch-icon' href='img/icon.gif' />
-    <link rel='stylesheet' type='text/css' href='style/style.css' />
-    <link rel='shortcut icon' href='img/icon.ico' />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <meta name='description'
+          content='Solve calculus and algebra problems online with Cymath math problem solver with steps to show your work. Get the Cymath math solving app on your smartphone!'/>
+    <meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0'/>
+    <meta property='og:image' content='http://www.cymath.comimg/cymath_square.gif'/>
+    <meta property='og:title' content='Cymath | Math Problem Solver with Steps | Math Solving App'/>
+    <meta property='og:description'
+          content='Solve calculus and algebra problems online with Cymath math problem solver with steps to show your work. Get the Cymath math solving app on your smartphone!'/>
+    <meta property='og:url' content='1'/>
+    <meta charset='utf-8'/>
+    <meta name='apple-mobile-web-app-capable' content='yes'/>
+    <meta name='apple-mobile-web-app-title' content='Cymath'/>
+    <link rel='apple-touch-icon' href='img/icon.gif'/>
+    <link rel='stylesheet' type='text/css' href='style/style.css'/>
+    <link rel='shortcut icon' href='img/icon.ico'/>
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine">
-    <script type='text/javascript' src='https://cdn.mathjax.org/mathjax/2.6-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type='text/javascript'
+            src='https://cdn.mathjax.org/mathjax/2.6-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
     <script src='js/jquery-fieldselection.js'></script>
     <script src='js/MathInput.js'></script>
     <script type="text/x-mathjax-config">
@@ -25,7 +28,8 @@
 		showProcessingMessages: false,
 		tex2jax: { inlineMath: [['$','$'],['\\(','\\)']] }
 	  });
-	</script>
+
+    </script>
     <script>
         var Preview = {
             delay: 150,        // delay after keystroke before updating
@@ -52,9 +56,12 @@
             //
             SwapBuffers: function () {
                 var buffer = this.preview, preview = this.buffer;
-                this.buffer = buffer; this.preview = preview;
-                buffer.style.visibility = "hidden"; buffer.style.position = "absolute";
-                preview.style.position = ""; preview.style.visibility = "";
+                this.buffer = buffer;
+                this.preview = preview;
+                buffer.style.visibility = "hidden";
+                buffer.style.position = "absolute";
+                preview.style.position = "";
+                preview.style.visibility = "";
             },
 
             //
@@ -66,8 +73,10 @@
             //  The callback function is set up below, after the Preview object is set up.
             //
             Update: function () {
-                if (this.timeout) {clearTimeout(this.timeout)}
-                this.timeout = setTimeout(this.callback,this.delay);
+                if (this.timeout) {
+                    clearTimeout(this.timeout)
+                }
+                this.timeout = setTimeout(this.callback, this.delay);
             },
 
             //
@@ -85,8 +94,8 @@
                 this.buffer.innerHTML = this.oldtext = text;
                 this.mjRunning = true;
                 MathJax.Hub.Queue(
-                    ["Typeset",MathJax.Hub,this.buffer],
-                    ["PreviewDone",this]
+                    ["Typeset", MathJax.Hub, this.buffer],
+                    ["PreviewDone", this]
                 );
             },
 
@@ -104,7 +113,7 @@
         //
         //  Cache a callback to the CreatePreview action
         //
-        Preview.callback = MathJax.Callback(["CreatePreview",Preview]);
+        Preview.callback = MathJax.Callback(["CreatePreview", Preview]);
         Preview.callback.autoReset = true;  // make sure it can run more than once
 
     </script>
@@ -122,16 +131,19 @@
                                 <a href='/'>
                                     <a href='/'>
                                         <div class='logo_text'>
-                                            <div class='logo_text_cy'>Cs</div><div class='logo_text_math'>math</div>
+                                            <div class='logo_text_cy'>Cs</div>
+                                            <div class='logo_text_math'>math</div>
                                         </div>
                                     </a>
                                 </a>
                             </td>
                             <td class='nar_bar_cell' width='100%' align='right'>
                                 <div class='menu_div_social'>
-                                    <a href='http://www.facebook.com/Cymath' target='_blank'><img class='social_link_icon' src='img/facebook.gif?3'>
+                                    <a href='http://www.facebook.com/Cymath' target='_blank'><img
+                                                class='social_link_icon' src='img/facebook.gif?3'>
                                     </a>
-                                    <a href='http://www.twitter.com/TeamCymath' target='_blank'><img class='social_link_icon' src='img/twitter.gif?3'>
+                                    <a href='http://www.twitter.com/TeamCymath' target='_blank'><img
+                                                class='social_link_icon' src='img/twitter.gif?3'>
                                     </a>
                                 </div>
                                 <div class='menu_div_follow_us'>Follow Us</div>
@@ -161,7 +173,9 @@
                         <tr>
                             <td>
                                 <div id='outer_q'>
-                                    <textarea class="solver_math" id="txtEquation" style=" font-size:18px; width: 100%; height:58vh; background:#e6e6e6; color:#4d4d4d;" placeholder="Click để nhập đề"></textarea>
+                                    <textarea class="solver_math" id="txtEquation"
+                                              style=" font-size:18px; width: 100%; height:58vh; background:#e6e6e6; color:#4d4d4d;"
+                                              placeholder="Click để nhập đề"></textarea>
                                 </div>
                             </td>
 
@@ -233,7 +247,9 @@
                                         <div id="math_sqrt">&#8730;
                                             <div class="square_big"></div>
                                         </div>
-                                        <div id="math_sqrtn"><sup><div class="square_small"></div></sup>&#8730;
+                                        <div id="math_sqrtn"><sup>
+                                                <div class="square_small"></div>
+                                            </sup>&#8730;
                                             <div class="square_big"></div>
                                         </div>
                                         <div id="math_chia">&#247;</div>
@@ -247,7 +263,8 @@
                                 </div>
                             </td>
                             <td width='30%'>
-                                <input id="step_solve" class='submit_solve'  style='height:100%;line-height:40px; ' name='enter' type='submit' value='Solve!' ></input>
+                                <input id="step_solve" class='submit_solve' style='height:100%;line-height:40px; '
+                                       name='enter' type='submit' value='Solve!'></input>
                             </td>
                         </tr>
                     </table>
@@ -262,7 +279,8 @@
             <h3>Hướng dẫn giải</h3>
         </div>
 
-        <div class="solver_math" id="txtResult" style="text-align:left; background:#e6e6e6; color:#4d4d4d;  width:100%; height:auto; "></div>
+        <div class="solver_math" id="txtResult"
+             style="text-align:left; background:#e6e6e6; color:#4d4d4d;  width:100%; height:auto; "></div>
         <div class="solver_math" id="MathBuffer" style="text-align:left; background:#e6e6e6; color:#4d4d4d;  width:100%; height:auto; margin-top:10px; margin-bottom:20px;
 			visibility:hidden; position:absolute; top:0; left: 0"></div>
     </div>
