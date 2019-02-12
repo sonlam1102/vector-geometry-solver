@@ -1,0 +1,27 @@
+begin_object: Doan[A1,B1];
+A1,B1: Diem;	
+ 
+begin_variables 
+end_variables
+
+begin_constraints
+end_constraints
+
+begin_construct_relations
+end_construct_relations
+
+begin_properties
+    	Doan[A1,B1] = Doan[B1,A1];
+end_properties
+
+begin_computation_relations
+end_computation_relations
+
+begin_rules 
+end_rules
+
+begin_functions
+end_functions
+
+end_object
+

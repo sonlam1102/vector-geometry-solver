@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Helpers\ReadExcersie;
 use App\Helpers\ReadSolution;
+use App\Console\RunCommand;
 
 class MainController extends Controller
 {
@@ -15,6 +16,14 @@ class MainController extends Controller
     public function solve(Request $request) {
         $problem = $request->post('debai');
 
-        dd($problem);
+        ReadExcersie::main($problem);
+
+        $run_bat = new RunCommand(public_path('giaitoan.mpl'));
+
+        $run_bat->execute();
+
+        $result = ReadSolution::main();
+
+        return response($result);
     }
 }

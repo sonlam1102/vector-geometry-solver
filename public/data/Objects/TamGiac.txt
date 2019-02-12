@@ -1,0 +1,35 @@
+begin_object: TamGiac[_A,_B,_C];
+	_A, _B, _C: Diem;
+begin_variables
+	a: Doan[_B, _C];
+	b: Doan[_A, _C];
+	c: Doan[_A, _B];
+	
+end_variables
+
+begin_constraints
+end_constraints
+
+begin_properties
+end_properties
+
+begin_contruction_properties
+	TamGiac[_A, _B, _C]= 	TamGiac[_B, _C, _A];
+	TamGiac[_A, _B, _C]= 	TamGiac[_C, _A, _B];
+end_contruction_properties
+
+begin_computation_relations
+end_computation_relations
+
+begin_rules
+	begin_rule 1
+		kind_rule="xac_dinh_doi_tuong";
+		hypothesis_part:
+			{_A,_B,_C}
+		end_hypothesis_part
+		goal_part:
+			{"Object"}
+		end_goal_part
+	end_rule	
+end_rules
+end_object

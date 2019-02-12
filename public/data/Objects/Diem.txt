@@ -1,0 +1,15 @@
+begin_object: Diem;
+
+begin_variables
+end_variables
+
+begin_constraints
+end_constraints
+
+begin_computation_relations
+end_computation_relations
+
+begin_rule
+end_rules
+
+end_object

@@ -1,0 +1,46 @@
+begin_operators
+  begin_operator: +(a,b)
+    a,b:VECTO
+    return c:VECTO
+    begin_proc
+	local c:VECTO;
+	if (whattype(a) <> `indexed`  or whattype(b) <> `indexed`) then
+	    return (a+b);
+	fi;
+
+	if  op(2,a) = op(1,b) then 
+	   c := Vecto[op(1,a),op(2,b)];  
+	   return c;
+	elif op(2,b)= op(1,a) then
+	   c := Vecto[op(1,b),op(2,a)];  
+	   return c;
+	fi;
+
+	return (a + b);
+    end_proc
+    properties
+    end_properties
+end_operator
+
+begin_operator:-(a,b)
+    a,b:VECTO
+    return c:VECTO
+    begin_proc
+      local c:VECTO;
+
+	if (whattype(a) <> `indexed`  or whattype(b) <> `indexed`) then
+	    return (a - b);
+	fi;
+
+	if  op(1,a)= op(1,b) then 
+	   c := Vecto[op(2,b),op(2,a)];  
+	   return c;
+	fi;
+	return (a - b);
+
+    end_proc
+    properties
+    end_properties
+end_operator
+
+end_operators

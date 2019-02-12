@@ -72,7 +72,7 @@ class ReadExcersie
         return $str;
     }
 
-    public function remove_words($str){
+    public static function remove_words($str){
         $str1= file_get_contents("dacbiet.txt");
         $strArray = explode(",", $str1);
         foreach($strArray as $key=>$value){
@@ -113,7 +113,7 @@ class ReadExcersie
         return -1;
     }
 
-    public function main($debai) {
+    public static function main($debai) {
         //$debai = "Cho tam giác BCI, hình bình hành ABCD. I là trung điểm DC. Phân tích: Veco[B,I] theo Vecto[A,B],Vecto[A,D].2";
 
         /*========= Biến chứa để ghi File=====================*/

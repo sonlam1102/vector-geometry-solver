@@ -1,0 +1,13 @@
+﻿begin_Relations
+["SongSong",Doan,Doan],{}
+["VuongGoc",Doan,Doan],{}
+["TrungDiem",Diem,Doan],{}
+["Thuoc",Diem,Doan],{}
+["TrongTam", Diem, TamGiac],{}
+["TrungTuyen", Doan, TamGiac],{}
+["TrungTruc", Doan, TamGiac],{}
+["Tam",Diem,HinhBinhHanh],{}
+["Tam",Diem,HinhChuNhat],{}
+["TrucTam",Diem,TamGiac],{}
+end_Relations
+

@@ -41,7 +41,8 @@ class ReadSolution
         if($giai==''){ echo "Vui lòng xem lại đề bài đã nhập!!!"; return;}
         $giai = self::PhanSos($loigiai, $giai);
         $giai = str_replace("*","\\cdot ",$giai);
-        echo $giai;
+
+        return $giai;
     }
 
     /*===Kiểm tra xem có phải là quan hệ hay không*/
