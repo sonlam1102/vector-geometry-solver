@@ -7,6 +7,10 @@ class ReadSolution
 {
     //Ham chinh
     public static function main() {
+        if (!file_exists('baigiai.txt')) {
+            return "Không thể giải";
+        }
+
         $loigiai= file_get_contents("baigiai.txt");
         $arr = explode("\r", $loigiai);
         $giai="";
