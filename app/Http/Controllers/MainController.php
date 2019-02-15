@@ -18,7 +18,7 @@ class MainController extends Controller
 
         ReadExcersie::main($problem);
 
-        $run_bat = new RunCommand(public_path('giaitoan.mpl'));
+        $run_bat = new RunCommand('giaitoan.mpl');
 
         $run_bat->execute();
 
