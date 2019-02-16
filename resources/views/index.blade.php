@@ -9,7 +9,7 @@
 
     <link rel='apple-touch-icon' href='img/icon.gif'/>
     <link rel='stylesheet' type='text/css' href='style/style.css'/>
-    <link rel='shortcut icon' href='img/icon.ico'/>
+    <link rel="shortcut icon" href="favicon.ico">
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine">
 
 </head>
