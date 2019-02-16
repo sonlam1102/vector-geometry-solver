@@ -1,0 +1,5 @@
+begin_Operators
+	["+", Vecto, [Vecto, Vecto]]
+	["-", Vecto, [Vecto, Vecto]] 
+	["*", Vecto, [real, Vecto]]
+end_Operators

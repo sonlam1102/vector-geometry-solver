@@ -1,0 +1,159 @@
+﻿begin_rules
+begin_rule 1			
+	kind_rule="1";
+	A,B,M : Diem; 	
+	hypothesis_part
+		{["TrungDiem",M,Doan[A,B]]}
+	end_hypothesis_part
+	goal_part
+		{  }
+	end_goal_part
+end_rule
+begin_rule 1			
+	kind_rule="1";
+	A,B,M : Diem; 	
+	hypothesis_part
+		{["TrungDiem",M,Doan[A,B]]}
+	end_hypothesis_part
+	goal_part
+		{ Vecto[M,A]*Vecto[M,B]= -Vecto[M,A]^2,Vecto[M,A]*Vecto[M,B]= -Vecto[M,B]^2,Vecto[M,A] + Vecto[M,B] = Vecto[0],Vecto[A,M] + Vecto[B,M] = Vecto[0],Vecto[A,B] = 2*Vecto[A,M],Vecto[A,B] = 2*Vecto[M,B],Vecto[B,A] = 2*Vecto[B,M],Vecto[B,A] = 2*Vecto[M,A],Vecto[A,B]=2*Vecto[M,B],Vecto[M,A]=-Vecto[M,B] }
+	end_goal_part
+end_rule
+begin_rule 2			
+	kind_rule="1";
+	A,B,C,G : Diem; 	
+	hypothesis_part
+		{["TrongTam",G,TamGiac[A,B,C]]}
+	end_hypothesis_part
+	goal_part
+		{ Vecto[G,A] + Vecto[G,B] + Vecto[G,C] = Vecto[0],Vecto[A,G] + Vecto[B,G] + Vecto[C,G] = Vecto[0], Vecto[G,A] = -1*Vecto[G,B]-Vecto[G,C],Vecto[G,C] = -1*Vecto[G,A]-Vecto[G,B], Vecto[G,B] = -1*Vecto[G,A]-Vecto[G,C]}
+	end_goal_part
+
+end_rule
+begin_rule 3			
+	kind_rule="1";
+	A,B,M, O : Diem; 	
+	hypothesis_part
+		{["TrungDiem",M,Doan[A,B]]}
+	end_hypothesis_part
+		goal_part
+		{Vecto[O,A] + Vecto[O,B] = 2 *Vecto[O,M] , -Vecto[A,O] - Vecto[B,O] = -2 *Vecto[M,O], Vecto[O,M]=1/2*(Vecto[O,A]+Vecto[O,B])}
+	end_goal_part
+
+end_rule
+begin_rule 4
+		kind_rule="1";
+		A,B,C,G, O : Diem; 	
+		hypothesis_part
+			{["TrongTam",G,TamGiac[A,B,C]]}
+		end_hypothesis_part
+		goal_part
+			{Vecto[A,O] + Vecto[B,O] + Vecto[C,O] = 3*Vecto[G,O],Vecto[O,A] + Vecto[O,B] + Vecto[O,C] = 3*Vecto[O,G]}
+		end_goal_part
+
+end_rule
+begin_rule 5			
+	kind_rule="1";
+	A,B,C,D,O : Diem; 	
+	hypothesis_part
+		{["Tam",O,HinhBinhHanh[A,B,C,D]]}
+	end_hypothesis_part
+	goal_part
+		{Vecto[O,A] + Vecto[O,C] = Vecto[0],Vecto[O,B] + Vecto[O,D] = Vecto[0],Vecto[A,O] + Vecto[C,O] = 0,Vecto[B,O] + Vecto[D,O] = Vecto[0]}
+	end_goal_part
+
+end_rule
+
+begin_rule 6			
+	kind_rule="1";
+	A,B,C,D,O : Diem; 	
+                   O1 : HinhBinhHanh[A,B,C,D]
+	hypothesis_part
+		{["Tam",O,HinhBinhHanh[A,B,C,D]]}
+	end_hypothesis_part
+	goal_part
+		{["TrungDiem",O,Doan[A,C]],["TrungDiem",O,Doan[B,D]]}
+	end_goal_part
+
+end_rule
+begin_rule 7			
+	kind_rule="3";
+	A,B,C,D : Diem; 	
+                   O1 : TamGiac[A,B,C]
+	hypothesis_part
+		{["TrungTuyen", Doan[A,D], TamGiac[A,B,C]]}
+	end_hypothesis_part
+	goal_part
+		{Vecto[A,D]= 1/2*(Vecto[A,B]+Vecto[A,C])}
+	end_goal_part
+
+end_rule
+begin_rule 8			
+	kind_rule="1";
+	A,B,C,D : Diem; 	
+	hypothesis_part
+		{["VuongGoc", Doan[A,B], Doan[C,D]]}
+	end_hypothesis_part
+	goal_part
+		{Vecto[A,B]*Vecto[C,D]=0, Vecto[B,A]*Vecto[D,C]=0,Vecto[A,B]*Vecto[D,C]=0,Vecto[B,A]*Vecto[C,D]=0}
+	end_goal_part
+
+end_rule
+begin_rule 9			
+	kind_rule="0";
+	A,B : Diem; 	
+	hypothesis_part
+		{}
+	end_hypothesis_part
+	goal_part
+		{Doan[A,B]^2=Vecto[A,B]^2, Vecto[A,B]^2=Vecto[B,A]^2, Vecto[A,B]=-Vecto[B,A]}
+	end_goal_part
+end_rule
+begin_rule 10			
+	kind_rule="3";
+	A,B,C,E,F : Diem;
+        O1: TamGiac[A,B,C];
+	hypothesis_part
+		{["TrungDiem", E, Doan[A,B]],["TrungDiem",F, Doan[A,C]]}
+	end_hypothesis_part
+	goal_part
+		{Vecto[E,F]=1/2*Vecto[B,C]}
+	end_goal_part
+end_rule
+
+
+begin_rule 12			
+	kind_rule="3";
+	A,B : Diem;
+	hypothesis_part
+		{Doan[A,B]=3}
+	end_hypothesis_part
+	goal_part
+		{Vecto[A,B]^2=3^2,Vecto[A,B]=3^2 }
+	end_goal_part
+end_rule
+begin_rule 14
+		kind_rule="1";
+		A,B,C,G : Diem; 	
+		hypothesis_part
+			{["TrucTam",G,TamGiac[A,B,C]]}
+		end_hypothesis_part
+		goal_part
+			{["VuongGoc",Doan[A,G], Doan[B,C]],["VuongGoc",Doan[B,G], Doan[A,C]],["VuongGoc",Doan[C,G], Doan[A,B]]}
+		end_goal_part
+
+end_rule
+begin_rule 15			
+	kind_rule="1";
+	A,B,C : Diem;
+	hypothesis_part
+		{["Thuoc", C, Doan[A,B]], Doan[A,B]=2*Doan[C,B]}
+	end_hypothesis_part
+	goal_part
+		{Vecto[C,B]=1/3*Vecto[A,B], Vecto[C,B]=1/2*Vecto[A,C], Vecto[A,B]=2*Vecto[C,B], Vecto[A,C]=2/3*Vecto[A,B]}
+	end_goal_part
+end_rule
+end_rules
+
+
+

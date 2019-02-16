@@ -1,0 +1,15 @@
+'Doan'=>'Doan thang|canh',
+'TrongTam'=>'Trong tam',
+'TamGiac'=>'tam giac',
+'HinhBinhHanh'=>'hinh binh hanh',
+'HinhChuNhat'=>'hinh chu nhat',
+'TrungTuyen'=>'trung tuyen',
+'TrungDiem'=>'trung diem',
+'Tam'=>'tam',
+'Thuoc'=>'Thuoc|thuoc',
+'VuongGoc'=>'vuong goc|Vuong Goc',
+'Diem'=>'diem|Diem',
+'SongSong'=>'song song|Song song',
+'Rut_gon'=>'Rut gon bieu thuc|Rut gon|rut gon',
+'Phan_tich'=>'Phan tich|phan tich'
+'Chung_minh'=>'Chung minh|chung minh|chung minh rang|CMR'

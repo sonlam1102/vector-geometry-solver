@@ -1,0 +1,34 @@
+﻿begin_object:  Vecto[_A,_B];	
+	_A, _B : Diem;	
+begin_variables
+end_variables
+
+begin_construct_relations
+end_construct_relations
+
+begin_constraints
+end_constraints
+
+begin_properties
+	Vecto[_A,B]=-Vecto[_B,_A];
+end_properties
+
+begin_construct_properties
+	Vecto[_A, _B] <> Vecto[_B, _A];
+end_construct_properties
+
+begin_computation_relations
+end_computation_relations
+
+begin_rules
+	begin_rule 1
+		kind_rule="xac_dinh_doi_tuong";
+		hypothesis_part
+			{_A, _B}
+		end_hypothesis_part;
+		goal_part:
+			{"object"}
+		end_goal_part		
+	end_rule
+end_rules
+end_object

@@ -1,0 +1,35 @@
+﻿begin_object:  HinhBinhHanh[_A, _B, _C, _D];
+	_A, _B, _C, _D : Diem;
+begin_variables
+	
+end_variables
+
+begin_construct_relations
+
+end_construct_relations
+
+begin_constraints
+
+end_constraints
+	
+begin_properties
+	Vecto[_A,_C]=Vecto[_A,_B]+Vecto[_A,_D];
+	Vecto[_B,_D]=Vecto[_B,_A]+Vecto[_B,_C];
+	Vecto[_C,_A]=Vecto[_C,_B]+Vecto[_C,_D];
+	Vecto[_D,_B]=Vecto[_D,_A]+Vecto[_D,_C];
+	Vecto[_A,_B]=Vecto[_D,_C];
+	Vecto[_A,_D]=Vecto[_B,_C];
+end_properties
+
+begin_contruction_properties
+	HinhBinhHanh[_A, _B, _C, _D]=HinhBinhHanh[_B, _C, _D, _A];
+	HinhBinhHanh[_A, _B, _C, _D]=HinhBinhHanh[_C, _D, _A, _B];
+	HinhBinhHanh[_A, _B, _C, _D]=HinhBinhHanh[_D, _A, _B, _C];
+end_contruction_properties
+
+begin_computation_relations
+end_computation_relations
+
+begin_rules
+end_rules
+end_object

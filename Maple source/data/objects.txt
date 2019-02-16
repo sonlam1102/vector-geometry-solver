@@ -1,0 +1,7 @@
+begin_Objects
+	Diem
+	Vecto
+	Doan
+	TamGiac	
+	HinhBinhHanh
+end_Objects
