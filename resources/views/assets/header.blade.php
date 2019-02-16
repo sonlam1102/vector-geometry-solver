@@ -34,7 +34,7 @@
 
                     <td class='nar_bar_cell' align='left'>
                         <a href='/sample'>
-                            <div class='logo_text_math'>Bài mẫu</div>
+                            <div class='logo_text_math'>Đề bài mẫu</div>
                         </a>
                     </td>
                 </tr>
