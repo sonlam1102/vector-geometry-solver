@@ -1,7 +1,7 @@
 @extends('main')
 @section('content')
     <div id="title-sol" style="text-align:center; border-radius: 10px 10px 0 0;">
-        <h3>Một số bài toán mẫu</h3>
+        <h3>Một số đề bài toán mẫu</h3>
     </div>
 
     <div style="text-align:left; padding-left: 20px;" >
@@ -75,6 +75,5 @@
             <p>Bài 6: Cho tam giác ABC. G là trọng tâm tam giác ABC. phân tích: Vecto[A,B] theo Vecto[G,A],Vecto[G,B], Vecto[G,C] theo Vecto[G,A],Vecto[G,B]</p>
         </div>
     </div>
-    <hr>
 
 @endsection

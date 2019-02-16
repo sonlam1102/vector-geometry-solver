@@ -34,4 +34,8 @@ class MainController extends Controller
     public function sample() {
         return view('sample.sample');
     }
+
+    public function guide() {
+        return view('info.guide');
+    }
 }

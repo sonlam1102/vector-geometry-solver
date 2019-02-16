@@ -14,5 +14,6 @@
 Route::get('/', 'MainController@index');
 Route::get('/info', 'MainController@info');
 Route::get('/sample', 'MainController@sample');
+Route::get('/guide', 'MainController@guide');
 
 Route::post('/problem/push', 'MainController@solve');

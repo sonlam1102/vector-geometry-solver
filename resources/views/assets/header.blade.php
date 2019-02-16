@@ -37,6 +37,12 @@
                             <div class='logo_text_math'>Đề bài mẫu</div>
                         </a>
                     </td>
+
+                    <td class='nar_bar_cell' align='left'>
+                        <a href='/guide'>
+                            <div class='logo_text_math'>Hướng dẫn </div>
+                        </a>
+                    </td>
                 </tr>
             </table>
         </td>
