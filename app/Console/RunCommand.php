@@ -17,6 +17,10 @@ class RunCommand
         $this->command = "\"".env("MAPPLE_DIR")."\" ".$mpl_path;
     }
 
+    public function setCommand($command) {
+        $this->command = $command;
+    }
+
     public function execute() {
         exec($this->command);
     }
