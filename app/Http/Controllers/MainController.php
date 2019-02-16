@@ -26,4 +26,12 @@ class MainController extends Controller
 
         return response($result);
     }
+
+    public function info() {
+        return view('info.info');
+    }
+
+    public function sample() {
+        return view('sample.sample');
+    }
 }

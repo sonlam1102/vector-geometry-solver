@@ -17,11 +17,24 @@
             </table>
         </td>
         <td class='nar_bar_cell' style='width:50%;' align='right'>
-            <table class='nav_bar_inner_table' cellpadding='0' cellspacing='0'>
+            <table class='nav_bar_inner_table' cellpadding='0' cellspacing='15'>
                 <tr>
+
                     <td class='nar_bar_cell' align='left'>
                         <a href='/'>
+                            <div class='logo_text_math'>Home</div>
+                        </a>
+                    </td>
+
+                    <td class='nar_bar_cell' align='left'>
+                        <a href='/info'>
                             <div class='logo_text_math'>Thông tin</div>
+                        </a>
+                    </td>
+
+                    <td class='nar_bar_cell' align='left'>
+                        <a href='/sample'>
+                            <div class='logo_text_math'>Bài mẫu</div>
                         </a>
                     </td>
                 </tr>
