@@ -10,7 +10,7 @@ use App\Console\RunCommand;
 class MainController extends Controller
 {
     public function index() {
-        return view('index');
+        return view('solve.solve');
     }
 
     public function solve(Request $request) {
