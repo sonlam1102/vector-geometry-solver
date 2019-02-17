@@ -27,7 +27,7 @@
             <p>Bài 4: Cho bốn điểm A, B, C, D. Rút gọn: Vecto[A,B]*Vecto[C,D]+Vecto[B,C]*Vecto[A,D]+Vecto[C,A]*Vecto[B,D]</p>
             <p>Bài 5: Cho tam giác ABC . I là trung điểm đoạn AB. Rút gọn: Vecto[C,A]^2+Vecto[C,B]^2-2*Vecto[C,I]^2-Vecto[A,B]^2/2</p>
             <p>Bài 6: Cho hai điểm A, B, M, H. HM vuông góc AB, I là trung điểm AB. Rút gọn: Vecto[M,A]*Vecto[M,B]-Vecto[M,I]^2-Vecto[A,B]^2/4, Vecto[M,A]^2+Vecto[M,B]^2-2*Vecto[M,I]^2+Vecto[A,B]^2/2.</p>
-            <p>Cho tam giác ABC. với G là trọng tâm tam giác ABC. Rút gọn: Vecto[M,A]*Vecto[B,C]+Vecto[M,B]*Vecto[C,A]+Vecto[M,C]*Vecto[A,B], Vecto[M,A]^2+Vecto[M,B]^2+Vecto[M,C]^2-3*Vecto[M,G]^2-Vecto[G,A]^2-Vecto[G,B]^2-Vecto[G,C]^2</p>
+            <p>Bài 7: Cho tam giác ABC. với G là trọng tâm tam giác ABC. Rút gọn: Vecto[M,A]*Vecto[B,C]+Vecto[M,B]*Vecto[C,A]+Vecto[M,C]*Vecto[A,B], Vecto[M,A]^2+Vecto[M,B]^2+Vecto[M,C]^2-3*Vecto[M,G]^2-Vecto[G,A]^2-Vecto[G,B]^2-Vecto[G,C]^2</p>
             <p>Bài 8: Cho tam giác ABC . G là trọng tâm tam giác ABC. Rút gọn: Vecto[G,A]*Vecto[G,B]+Vecto[G,B]*Vecto[G,C]+Vecto[G,C]*Vecto[G,A]+1/2*(Vecto[G,A]^2+Vecto[G,B]^2+Vecto[G,C]^2)</p>
             <p>Bài 9: Cho tứ giác ABCD. Rút gọn: Vecto[A,B]^2-Vecto[B,C]^2+Vecto[C,D]^2-Vecto[D,A]^2-2*Vecto[A,C]*Vecto[D,B].</p>
             <p>Bài 10: Cho các điểm A,B,C,D. Rút gọn: 2*Vecto[A,D]*Vecto[A,B] + Vecto[A,D]*Vecto[B,C]+ Vecto[A,D]*Vecto[C,A].</p>
