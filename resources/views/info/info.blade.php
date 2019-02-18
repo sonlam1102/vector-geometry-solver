@@ -13,24 +13,14 @@
     </div>
     <hr>
 
-    <div style="text-align:left; padding-left: 20px;" >
-        <h2>Techical: </h2>
-        <div style="text-align:left; padding-left: 30px;" >
-            <p>Ngôn ngữ sử dụng: <b>Maple, PHP, Javascript</b> </p>
-            <p>Framework: <b>Laravel</b> </p>
-            <p>Mô hình tri thức sử dụng: <b>COKB</b> </p>
-            <p>Bộ suy diễn cho hệ thống được thiết kế bằng ngôn ngữ maple</p>
-        </div>
-    </div>
-    <hr>
 
     <div style="text-align:left; padding-left: 20px;" >
         <h2>Các tác giả: </h2>
         <div style="text-align:left; padding-left: 30px;" >
-            <p> Nguyễn Đình Hiển</p>
-            <p> Nguyễn Văn Diện</p>
-            <p> Phạm Minh Hoàng </p>
-            <p> Lưu Thanh Sơn </p>
+            <p> <b>Nguyễn Đình Hiển</b> - Trường Đại học Công nghệ thông tin - ĐHQG.TPHCM </p>
+            <p> <b>Phạm Thi Vương</b> - Trường Đại học Công nghệ thông tin - ĐHQG.TPHCM</p>
+            <p> <b>Lưu Thanh Sơn </b> -  Trường Đại học Công nghệ thông tin - ĐHQG.TPHCM</p>
+            <p> <b> Lê Thành Trung </b> - Trường Cao đăng Kinh tế - Tài chính Vĩnh Long </p>
         </div>
     </div>
     <hr>
