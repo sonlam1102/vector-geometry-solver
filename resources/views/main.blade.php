@@ -23,7 +23,7 @@
         @include('assets.header')
     </div>
 
-    <div class='content' style="text-align:center;  width:90%;">
+    <div class='content' style="text-align:center;  width:80%;">
         @yield('content')
     </div>
 
