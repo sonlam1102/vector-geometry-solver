@@ -80,7 +80,7 @@
         </td>
         <td width='30%'>
             <input id="step_solve" class='submit_solve' style='height:100%;line-height:40px; '
-                   type='submit' value='GỈAI!'/>
+                   type='submit' value='GIẢI!'/>
         </td>
     </tr>
 </table>
